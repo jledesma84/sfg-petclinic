@@ -1,0 +1,24 @@
+plugins {
+  id 'net.researchgate.release' version '2.7.0'
+}
+
+description = 'sfg-pet-clinic'
+
+allprojects {
+	apply plugin: 'java'
+	apply plugin: 'eclipse'	
+	
+	group = 'guru.springframework'
+	version = '0.0.1'
+	
+	sourceCompatibility = 1.8
+	
+	repositories {
+		mavenCentral()
+		jcenter()
+	}
+	
+	dependencies {
+		//testImplementation('org.springframework.boot:spring-boot-starter-test')
+	}
+}
