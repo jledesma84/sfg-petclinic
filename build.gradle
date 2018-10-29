@@ -29,7 +29,12 @@ release {
 	newVersionCommitMessage = '[Release]: new snapshot version '
 	tagTemplate = '${version}'
 	pushReleaseVersionBranch = 'release'
+	scmAdapters = [net.researchgate.release.GitAdapter]
 	git {
 		requireBranch = 'master'
+		pushToRemote = 'origin'
+		pushToBranchPrefix = ''
+		commitVersionFileOnly = false
+		signTag = false
 	}
 }
