@@ -22,3 +22,12 @@ allprojects {
 		//testImplementation('org.springframework.boot:spring-boot-starter-test')
 	}
 }
+
+release {
+	tagCommitMessage = '[Release]: creating tag '
+	tagTemplate = '${version}'
+	pushReleaseVersionBranch = 'release'
+	git {
+		requireBranch = 'master'
+	}
+}
