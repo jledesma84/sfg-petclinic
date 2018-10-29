@@ -24,7 +24,9 @@ allprojects {
 }
 
 release {
+	preTagCommitMessage = '[Release]: '
 	tagCommitMessage = '[Release]: creating tag '
+	newVersionCommitMessage = '[Release]: new snapshot version '
 	tagTemplate = '${version}'
 	pushReleaseVersionBranch = 'release'
 	git {
