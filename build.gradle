@@ -1,7 +1,3 @@
-/*plugins {
-  id 'net.researchgate.release' version '2.7.0'
-}*/
-
 description = 'sfg-pet-clinic'
 
 allprojects {
@@ -17,25 +13,4 @@ allprojects {
 		mavenCentral()
 		jcenter()
 	}
-	
-	dependencies {
-		//testImplementation('org.springframework.boot:spring-boot-starter-test')
-	}
 }
-/*
-release {
-	preTagCommitMessage = '[Release]: '
-	tagCommitMessage = '[Release]: creating tag '
-	newVersionCommitMessage = '[Release]: new snapshot version '
-	tagTemplate = '${version}'
-	pushReleaseVersionBranch = 'master'
-	buildTasks = ['clean','build']
-	scmAdapters = [net.researchgate.release.GitAdapter]
-	git {
-		requireBranch = 'master'
-		pushToRemote = 'origin'
-		pushToBranchPrefix = ''
-		commitVersionFileOnly = false
-		signTag = false
-	}
-}*/
